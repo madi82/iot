@@ -1,0 +1,326 @@
+
+
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282E34;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.a1{
+    color: #ddd;
+}/*this is for welcome tag*/
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.parallax, .parallax1, .parallax2 {
+    
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+.parallax {
+  background-image: url("image32.jpg");
+  min-height: 95%;
+}
+
+.parallax1 {
+  background-image: url("image30.jpg");
+  min-height: 70%;
+}
+
+.parallax2 {
+  background-image: url("image31.jpg");
+  min-height: 50%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption1 {
+  position: absolute;
+  left: 0;
+  top: 175%;
+  width: 100%;
+  text-align: center;
+  color: #565151;
+}
+
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 280%;
+  width: 100%;
+  text-align: center;
+  color: #565151;
+}
+
+.caption span.border {
+  background-color: #282E34;
+  color: #ddd;
+  padding: 20px;
+  font-size: 35px;
+  letter-spacing: 5px;
+}</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#autocom">What is AutoCom?</a></li>
+  <li><a href="#workflow">How it's works?</a></li>
+  <li><a href="#contact">Contact us</a></li>
+  <li style="float:right"><a href="#myBtn">Login</a></li>
+</ul>
+
+
+
+<div class="parallax" id="home"></div>
+  <div class="caption">
+    
+<span class="border">
+
+<!-- Trigger/Open The Modal -->
+<a id="myBtn">Welcome To Auto Computation</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">×</span>
+		<!-- Login Form -->
+      <input style="height:50px;font-size:14pt; background-color: #282E34; color: #ddd" type="password" id="myPsw" placeholder=" Enter Passcode" name="uname" size="12" required>
+      <button type="submit" onclick="myFunction()" style="height:50px; font-size:14pt;background-color: #282E34; color: #ddd">Login</button>
+      <script>
+        function myFunction() 
+	{
+	    var y=60004158008;
+            var x = document.getElementById("myPsw").value;
+            if (x == y) 
+		{
+			alert("You have entered correct");
+			window.open("http://www.w3schools.com");
+		} 
+           else 
+		{
+        		alert("Not Correct & Try Again");
+             	}
+        }
+      </script>
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+</span>
+  </div>
+<div id="autocom" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<center><img src="logo.png" height="150" width="150"></img></center>
+<br>
+<center><font size="9">What is AutoCom?</font>
+<font size="4"><br>
+It is a system to trigger specific file from remote location.
+<br>
+This is use to open file when computer in dead state.
+<br>
+System that operate files over computer even when pc is turn off</font></center>
+</div>
+
+
+<div class="parallax1"></div>
+<div class="caption1">
+<font size="10">Work Flow</font></div>
+
+<div id="workflow" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+<center><font size="9">How it's works?</font>
+<font size="4"><br>
+1.Enter Passcode in Login Form
+<br>
+2.Select which file to be open
+<br>
+3.Web site sends signal to server and embedded system
+<br>
+4.Computer will turn on by embedded system
+<br>
+5.Computer will retrive data from server and triggered file
+<br>
+6.End with Ack</font></center>
+</div>
+
+
+<div class="parallax2"></div>
+<div class="caption2">
+<font size="10">Contacts</font></div>
+
+<div id="contact" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<center><font size="9">Contact with us</font><br>
+</center>
+<br>
+
+
+<table style="width:100%">
+  <tr>
+    <th><div style="color: #fff">This is for me in white color not on site</div></th>
+    <th><div style="color: #fff">same here</div></th> 
+  </tr>
+  
+<tr>
+  <td rowspan="2">
+  <div id="map" style="width:100%;height:300px"></div>
+  <script>
+  function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+    center: new google.maps.LatLng(19.1031, 72.8467),
+    zoom: 15
+    }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  
+  </td>
+  
+
+<td>
+    <font style="color: #777"size="4">
+    <center><img src="logo.png" height="150" width="150"></img>
+    <br><br>
+	<i><font size="5">I'd love your feedback!</font></i><br><br>
+	Location:Vile Parle,Mumbai<br>
+	Phone No:9000000000<br>
+	Email1:shantanumadiwale@gmail.com<br>
+	Email2:amitkd251996@gmail.com<br>
+        Leave your problem on shantanumadiwale@gmail.com<center>
+    </font>
+</td>
+</tr> 
+
+</table>
+</div>
+
+<footer style="color: #777; background-color:#DCDCDC; padding:30px;">
+  <center>Powered by D.J Sanghavi COE,B4 batch
+<br>© 2016 autoCom Inc..Founder Shantanu Madiwale.</center>
+</footer>
+
+</body>
+</html>
